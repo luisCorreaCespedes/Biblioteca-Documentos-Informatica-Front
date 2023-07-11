@@ -1,6 +1,6 @@
 import axios from "./axios";
 
-const API = "https://bibliodocumentosinformatica.onrender.com/api";
+const API = "https://bibliodocumentosinformaticaapi.onrender.com/api";
 
 export const registerRequest = user => axios.post(`/registro`, user);
 
