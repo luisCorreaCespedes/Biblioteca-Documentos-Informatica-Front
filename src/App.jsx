@@ -13,9 +13,6 @@ import { AuthProvider } from "./context/AuthContext";
 import ProtectedRoute from "./components/ProtectedRoute";
 import ProtectedAdmin from "./components/ProtectedAdmin";
 import { DocsProvider } from './context/DocsContext';
-import { disableReactDevTools } from "@fvilers/disable-react-devtools";
-
-if (process.env.NODE_ENV === 'production') disableReactDevTools();
 
 function App() {
   return (
