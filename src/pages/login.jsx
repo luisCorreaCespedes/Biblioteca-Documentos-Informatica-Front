@@ -81,11 +81,6 @@ function Login() {
                                     {showPassword ? <FaEyeSlash /> : <FaEye />}
                                 </div>
                             </div>
-                            {/*
-                            <div className='mt-2'>
-                                <button className='text-xs font-montserrat font-semibold text-blue-700 hover:underline'>¿Olvidaste la contraseña?</button>
-                            </div>
-                            */}
                         </div>
 
                         {
