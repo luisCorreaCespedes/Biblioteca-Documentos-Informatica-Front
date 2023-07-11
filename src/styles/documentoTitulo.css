@@ -1,0 +1,44 @@
+@tailwind base; 
+@tailwind components;
+
+.estiloCarta {
+    @apply cursor-pointer flex flex-row border-l-8 border-l-slate-700 bg-white border border-gray-400 rounded-lg shadow hover:bg-slate-200;
+}
+
+.estiloCartaModal {
+    @apply flex flex-row bg-white rounded-lg mx-2 mt-1;
+}
+
+.estiloCartaModificador {
+    @apply flex flex-row border-l-8 border-l-cyan-700 bg-gray-100 border border-gray-400 shadow hover:bg-slate-200;
+}
+
+.estiloPortada {
+    @apply flex border border-r-gray-400 border-r-2 bg-white;
+}
+
+.estiloPortadaModal {
+    @apply flex border border border-2 rounded-md border-gray-400 border-l-8 border-l-slate-700 bg-white;
+}
+
+.estiloInformacion {
+    @apply flex flex-col px-4 py-2 items-start;
+}
+
+.textoTitulo {
+    @apply font-montserrat text-start text-sm font-bold text-black pb-4 italic subpixel-antialiased;
+}
+
+.textoInfo {
+    @apply font-montserrat flex mb-2 text-start text-xs tracking-tight text-black font-semibold;
+}
+
+.textoTituloModal {
+    @apply font-montserrat text-start text-sm md:text-base font-bold text-black pb-4 italic subpixel-antialiased;
+}
+
+.textoInfoModal {
+    @apply font-montserrat flex mb-2 text-start text-xs md:text-sm tracking-tight text-black font-semibold;
+}
+
+@tailwind utilities;

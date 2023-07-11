@@ -1,0 +1,56 @@
+@tailwind base; 
+@tailwind components;
+
+.contenedorSubirDocumento {
+    @apply flex flex-col justify-center items-center pl-1 pr-1;
+}
+
+.tamanoContenedorSubirDocumento {
+    @apply w-full max-w-3xl;
+}
+
+.textoDescripcion {
+    @apply font-montserrat pb-8 mx-3 font-semibold md:text-lg text-center;
+}
+
+.estiloFormularioSubirDocumento {
+    @apply px-4 pb-8 mb-4;
+}
+
+.textoCampo {
+    @apply font-montserrat text-start block text-gray-800 text-sm md:text-base font-semibold;
+}
+
+.estiloInputCampo {
+    @apply w-full text-sm py-2 px-3 rounded-md border-gray-400 bg-white mt-2 font-montserrat border focus:border-gray-700 focus:bg-white focus:outline-none focus:placeholder-gray-900 placeholder-gray-500;
+}
+
+.estiloSelectorCampo {
+    @apply w-full block text-sm py-2 px-3 rounded-md border-gray-400 bg-white mt-2 font-montserrat border focus:border-gray-700 focus:bg-white focus:outline-none;
+}
+
+.botonesAlmacenar {
+    @apply flex items-center justify-center pt-4 px-8;
+}
+
+.contenedorDragDrop {
+    @apply flex flex-col justify-center items-center pl-2 pr-2 pt-4;
+}
+
+.dragDrop {
+    @apply w-[60%] cursor-pointer font-montserrat text-center text-sm flex flex-col content-center justify-center items-center pl-2 pr-2 pt-2 pb-2 border border-dashed rounded-lg border-gray-600 bg-gray-100 hover:border-2;
+}
+
+
+.customize {
+    @apply cursor-pointer;
+ }
+ 
+ #uploadDoc {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+ }
+
+
+@tailwind utilities;

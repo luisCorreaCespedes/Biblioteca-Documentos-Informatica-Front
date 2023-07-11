@@ -1,0 +1,40 @@
+@tailwind base; 
+@tailwind components;
+
+.formularioGeneral {
+    @apply flex justify-center pt-4 pb-4;
+}
+
+.labelBuscador {
+    @apply mb-2 text-sm font-medium text-gray-900 sr-only;
+}
+
+.contenedorBuscador {
+    @apply xl:w-[50%] w-[90%] lg:w-[50%] md:w-[70%];
+}
+
+.contenedorFiltros {
+    @apply flex flex-row justify-center pb-12;
+}
+
+.estilosFiltros {
+    @apply xl:w-44 lg:w-44 md:w-40 sm:w-40 p-1 mx-2 bg-gray-50 border border-gray-400 text-gray-900 text-xs md:text-sm font-semibold rounded-lg block w-32 focus:border-gray-700 focus:outline-none;
+}
+
+.contenedorResultados {
+    @apply flex justify-center;
+}
+
+.estilosResultados {
+    @apply pb-6 flex-col;
+}
+
+.estiloTexto {
+    @apply text-lg font-normal font-montserrat leading-tight;
+}
+
+.separadorResultados {
+    @apply border-gray-400 border leading-tight;
+}
+
+@tailwind utilities;

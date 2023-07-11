@@ -1,0 +1,72 @@
+@tailwind base; 
+@tailwind components;
+
+.estiloNavbar {
+    @apply fixed w-full bg-white text-black mb-4 border-b-2 border-solid border-gray-200 z-40;
+}
+
+.contenedorNavbar {
+    @apply lg:ml-6 lg:mr-6 ml-2 mr-2 mx-auto flex justify-between items-center px-1;
+}
+
+.contenedorLogo {
+    @apply flex flex-shrink-0 font-medium items-center text-gray-900 md:mb-0;
+}
+
+.imagen {
+    @apply w-12 h-full text-white p-2;
+}
+
+.tituloTexto {
+    @apply text-xl font-montserrat text-black font-semibold antialiased;
+}
+
+.navbarFull {
+    @apply hidden md:ml-auto md:flex flex-wrap items-center justify-center text-[16px] font-montserrat font-semibold tracking-wide;
+}
+
+.botonEstilo {
+    @apply pl-1 mr-6 hover:underline decoration-[#3A4860] text-black;
+}
+
+.contenedorPerfilSesion {
+    @apply hidden sm:inline-flex ml-4 mr-4 md:mr-0  items-center;
+}
+
+.imagenPerfil {
+    @apply h-12 w-12 rounded-3xl border-[2px] border-transparent hover:border-black;
+}
+
+.textoPerfil {
+    @apply pl-2  text-base font-montserrat font-medium;
+}
+
+.botonExpandir {
+    @apply md:hidden rounded-md active:outline-none focus:outline-none;
+}
+
+.estiloBotonExpandir {
+    @apply h-8 w-8 rounded-md text-black hover:text-gray-500;
+}
+
+.navbarComprimido {
+    @apply w-full flex flex-col md:hidden bg-[#475875] text-base text-center font-montserrat font-normal;
+}
+
+.estiloBotonComprimido {
+    @apply block px-3 border-b-2 border-solid border-gray-300 py-2 text-white hover:bg-gray-700;
+}
+
+.profile {
+    @apply flex flex-col absolute pl-1 mr-3 mt-1 text-start items-center justify-center right-0 top-16 h-52 w-52 bg-gray-50 border-[1px] rounded-md border-2 border-gray-300;
+}
+
+.profileNoAdmin {
+    @apply flex flex-col absolute pl-1 mr-4 mt-1 text-start items-center justify-center right-0 top-16 h-32 w-40 bg-gray-50 border-[1px] rounded-md border-2 border-gray-300;
+}
+
+.profileEstilo {
+    @apply pl-1 mr-4 hover:underline decoration-[#3A4860] text-black text-start text-[14px];
+}
+
+@tailwind utilities;

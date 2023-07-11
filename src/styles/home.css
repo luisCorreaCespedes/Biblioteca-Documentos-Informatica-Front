@@ -1,0 +1,20 @@
+@tailwind base; 
+@tailwind components;
+
+.textoExplicacion {
+    @apply px-1 font-montserrat mx-3 font-semibold md:text-lg text-center antialiased;
+}
+
+.inputEstilo {
+    @apply font-montserrat block w-full p-2 pl-4 text-sm font-normal text-gray-800 bg-white bg-clip-padding border border-solid border-gray-500 rounded-lg transition ease-in-out m-0 focus:text-gray-800 focus:bg-white focus:border-gray-900 focus:border-2 focus:outline-none;
+}
+
+.contenedorDocumentos {
+    @apply pt-2 pb-14 ml-4 mr-4 mx-auto;
+}
+
+.gridDocumentos {
+    @apply grid grid-flow-row auto-rows-max grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-2;
+}
+
+@tailwind utilities;

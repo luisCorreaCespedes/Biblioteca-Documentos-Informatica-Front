@@ -1,0 +1,12 @@
+@tailwind base; 
+@tailwind components;
+
+.contenedorFooterGeneral {
+    @apply w-full flex flex-col bg-[#475875] items-center justify-end fixed bottom-0 pt-1 pb-1;
+}
+
+.textoFooterGeneral {
+    @apply text-center text-[11px] font-montserrat font-normal text-[#E1E1E1];
+}
+
+@tailwind utilities;

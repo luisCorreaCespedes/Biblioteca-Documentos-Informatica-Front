@@ -1,0 +1,104 @@
+@tailwind base; 
+@tailwind components;
+
+.contenedorModificar {
+    @apply justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none;
+}
+
+.tamanoContenedorModificar {
+    @apply relative w-auto md:w-[75%] my-2 mx-auto max-w-3xl;
+}
+
+.bordeContenedorModificar {
+    @apply border-0 rounded-lg shadow-lg relative flex flex-col bg-white outline-none focus:outline-none;
+}
+
+.cabeceraModificar {
+    @apply flex items-start justify-between p-3 border-b border-solid border-slate-200 rounded-t;
+}
+
+.textoCabeceraModificar {
+    @apply text-base lg:text-xl font-montserrat font-semibold;
+}
+
+.formularioModificar {
+    @apply relative px-2 pt-4 flex-auto;
+}
+
+.labelFormularioModificar {
+    @apply font-montserrat text-start block text-gray-800 text-xs lg:text-base font-normal;
+}
+
+.inputFormularioModificador {
+    @apply w-full text-xs lg:text-base py-2 px-3 rounded-md border-gray-400 bg-white mt-2 font-montserrat border focus:border-gray-700 focus:bg-white focus:outline-none;
+}
+
+.selectorFormularioModificador {
+    @apply w-full block text-xs lg:text-base py-2 px-3 rounded-md border-gray-400 bg-white mt-2 font-montserrat border focus:border-gray-700 focus:bg-white focus:outline-none;
+}
+
+.contenedorDragDropModificador {
+    @apply flex flex-col justify-center items-center pl-2 pr-2 pt-2 lg:pl-4 lg:pr-2;
+}
+
+.botonesModificar {
+    @apply flex items-center justify-end pt-2 border-t border-solid border-slate-200 rounded-b;
+}
+
+.posicionContenedor {
+    @apply opacity-25 fixed inset-0 z-40 bg-black;
+}
+
+.contenedorEliminar {
+    @apply justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none bg-transparent;
+}
+
+.tamanoContenedorEliminar {
+    @apply relative w-[90%] my-2 mx-auto max-w-3xl;
+}
+
+.bordeContenedorEliminar {
+    @apply border-0 rounded-lg shadow-lg relative flex flex-col bg-white outline-none focus:outline-none;
+}
+
+.cabeceraContenedorEliminar {
+    @apply flex items-start justify-between pr-2 pt-1;
+}
+
+.cuerpoEliminar {
+    @apply relative px-2 pt-2 flex flex-col justify-center items-center;
+}
+
+.textoAlerta {
+    @apply text-base lg:text-lg font-montserrat font-normal;
+}
+
+.imagenAlerta {
+    @apply w-16 lg:w-24 pt-2 pb-2 lg:pt-4 lg:pb-4;
+}
+
+.imagenCargando {
+    @apply w-16 lg:w-24 pt-2 pb-4 lg:pt-4;
+}
+
+.imagenExito {
+    @apply w-16 lg:w-24 pt-2 pb-4;
+}
+
+.botonesEliminar {
+    @apply flex items-center justify-end pt-12;
+}
+
+.botonModales {
+    @apply bg-[#2A3547] hover:bg-[#475875] text-white font-montserrat px-4 py-1 mx-1 rounded-md text-xs md:text-base;
+}
+
+.btnX {
+    @apply ml-auto bg-transparent border-0 text-black float-right text-sm leading-none font-semibold outline-none focus:outline-none;
+}
+
+.X {
+    @apply text-black h-6 w-6 text-xl block outline-none focus:outline-none hover:text-gray-500;
+}
+
+@tailwind utilities;
