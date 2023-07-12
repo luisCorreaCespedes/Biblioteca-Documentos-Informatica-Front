@@ -1,11 +1,13 @@
 import axios from "./axios";
 
-export const getDocsRequest = () => axios.get("/docs");
+const API = "https://bibliodocumentosinformaticaapi.onrender.com/api";
 
-export const getDocRequest = (id) => axios.get(`/docs/${id}`);
+export const getDocsRequest = () => axios.get(`${API}/docs`);
 
-export const createDocsRequest = (docs) => axios.post("/docs", docs);
+export const getDocRequest = (id) => axios.get(`${API}/docs/${id}`);
 
-export const updateDocsRequest = (id, docs) => axios.put(`/docs/${id}`, docs);
+export const createDocsRequest = (docs) => axios.post(`${API}/docs`, docs);
 
-export const deleteDocsRequest = (id) => axios.delete(`/docs/${id}`);
+export const updateDocsRequest = (id, docs) => axios.put(`${API}/docs/${id}`, docs);
+
+export const deleteDocsRequest = (id) => axios.delete(`${API}/docs/${id}`);
