@@ -1,7 +1,5 @@
 import axios from "./axios";
 
-const API = "https://server.bibliodocumentosinformatica.lol/api";
-
 export const getDocsRequest = () => axios.get("/docs");
 
 export const getDocRequest = (id) => axios.get(`/docs/${id}`);

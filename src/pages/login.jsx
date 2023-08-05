@@ -81,9 +81,7 @@ function Login() {
                                     {showPassword ? <FaEyeSlash /> : <FaEye />}
                                 </div>
                             </div>
-                            <div className='mt-2'>
-                                <button className='text-xs font-montserrat font-semibold text-blue-700 hover:underline'>¿Olvidaste la contraseña?</button>
-                            </div>
+                            
                         </div>
 
                         {
@@ -102,7 +100,7 @@ function Login() {
                     <div className='contenedorFooter'>
                         <footer className='estiloFooter'>
                             <hr className='separador' />
-                            <p className='textoFooter'>Plataforma desarrollada por XXXXXX</p>
+                            <p className='textoFooter'>Plataforma desarrollada por UTEM</p>
                             <p className='textoFooter'>2023 © UTEM - Todos los Derechos Reservados</p>
                         </footer>
                     </div>

@@ -2,7 +2,6 @@
   "name": "client",
   "private": true,
   "version": "0.0.0",
-  "proxy": "https://bibliodocumentosinformatica.onrender.com",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -17,7 +16,6 @@
     "file-saver": "^2.0.5",
     "firebase": "^9.23.0",
     "js-cookie": "^3.0.5",
-    "local-storage": "^2.0.0",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
