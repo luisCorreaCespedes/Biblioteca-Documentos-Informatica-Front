@@ -54,6 +54,7 @@ export const AuthProvider = ({children}) => {
             const res = await loginRequest(user);
             setIsAuthenticated(true);
             setUser(res.data);
+            console.log(Cookies.get("token"));
         } catch (error) {
             if (Array.isArray(error.response.data)) {
                 return setErrors(error.response.data);
