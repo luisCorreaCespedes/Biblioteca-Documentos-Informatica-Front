@@ -1,6 +1,6 @@
 import axios from "./axios";
 
-const API = "https://bibliodocumentosinformaticaapi.onrender.com/api";
+const API = "https://server.bibliodocumentosinformatica.lol/api";
 
 export const getDocsRequest = () => axios.get("/docs");
 

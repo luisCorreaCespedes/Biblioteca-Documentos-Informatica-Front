@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-    baseURL: "https://bibliodocumentosinformaticaapi.onrender.com/api",
+    baseURL: "https://server.bibliodocumentosinformatica.lol/api",
     withCredentials: true,
 });
 
