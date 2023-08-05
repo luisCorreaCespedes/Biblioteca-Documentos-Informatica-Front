@@ -65,7 +65,7 @@ function SubirDocumento() {
 
     const guardarDatos = async () => {
         try {
-          const storageRef = ref(storage, v4());
+          const storageRef = ref(storage, `${v4()}.pdf`);
           await uploadBytes(storageRef, fileDoc);
           const downloadURL = await getDownloadURL(storageRef);
           return downloadURL;
@@ -113,6 +113,7 @@ function SubirDocumento() {
             }
         } catch (error) {
             console.log(error);
+            setModalError(true);
         }
       });
 
