@@ -89,8 +89,8 @@ function Navbar() {
                                 ):(
                                     <div className='profileNoAdmin'>
                                         <div className='flex flex-col gap-4'>
-                                            <li className='profileEstilo cursor-pointer inline-flex items-center'> <p className='pr-2'><FaChartBar /></p> Estadísticas</li>
-                                            <li className='profileEstilo cursor-pointer inline-flex items-center'> <p className='pr-2'><FaGlasses /></p> Nosotros</li>
+                                            <li onClick={(e) => {estadisticas(), setProfileOpen(false)}} className='profileEstilo cursor-pointer inline-flex items-center'> <p className='pr-2'><FaChartBar /></p> Estadísticas</li>
+                                            <li onClick={(e) => {nosotros(), setProfileOpen(false)}} className='profileEstilo cursor-pointer inline-flex items-center'> <p className='pr-2'><FaGlasses /></p> Nosotros</li>
                                             <button className='profileEstilo cursor-pointer inline-flex items-center' onClick={(e) => salir()}> <p className='pr-2'><FaPowerOff /></p> Cerrar Sesión</button>
                                         </div>
                                     </div>
@@ -151,7 +151,7 @@ function Navbar() {
                                     <p className='pl-2'>Estadísticas</p>
                                 </div>
                             </button>
-                            <button className='estiloBotonComprimido'>
+                            <button onClick={() => nosotros()} className='estiloBotonComprimido'>
                                 <div className='inline-flex items-center'>
                                     <p><FaGlasses /></p>
                                     <p className='pl-2'>Nosotros</p>
