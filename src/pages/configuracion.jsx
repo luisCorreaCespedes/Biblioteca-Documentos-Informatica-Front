@@ -64,6 +64,8 @@ function Configuracion() {
             setEmailLoading(false);
             setEmailOK(true);
         }, (error) => {
+            setEmailLoading(false);
+            setEmailError(true);
             console.log(error.text);
         });
     };

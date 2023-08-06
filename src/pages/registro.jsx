@@ -50,11 +50,11 @@ function Registro() {
                     <form className='contenedorFormulario' onSubmit={ (register("usertype", { value: 'user' }), onSubmit) }>
                         <div className='mt-4'>
                             <label className='labelCampoFormulario text-sm'>Nombre Usuario</label>
-                            <input className='inputCampoFormulario text-xs' type='text' name='' id='username' placeholder='Ingrese su nombre' required {...register("username", { required: true })} autoComplete='on' />
+                            <input className='inputCampoFormulario text-xs' type='text' name='' id='username' placeholder='Ingrese su nombre' required {...register("username", { required: true })} />
                         </div>
                         <div className='mt-4'>
                             <label className='labelCampoFormulario text-sm'>Correo Institucional</label>
-                            <input className='inputCampoFormulario text-xs' type='email' name='' id='email' placeholder='Ingrese su correo' required {...register("email", { required: true })} autoComplete='on' />
+                            <input className='inputCampoFormulario text-xs' type='email' name='' id='email' placeholder='Ingrese su correo' required {...register("email", { required: true })} />
                         </div>
                         <div className='mt-4 relative password-input'>
                             <label className='labelCampoFormulario text-sm'>Contraseña</label>
@@ -90,7 +90,7 @@ function Registro() {
                     <div className='contenedorFooter'>
                         <footer className='estiloFooter'>
                         <hr className='separador' />
-                        <p className='textoFooter'>Plataforma desarrollada por XXXXXX</p>
+                        <p className='textoFooter'>Plataforma desarrollada por UTEM</p>
                         <p className='textoFooter'>2023 © UTEM - Todos los Derechos Reservados</p>
                         </footer>
                     </div>

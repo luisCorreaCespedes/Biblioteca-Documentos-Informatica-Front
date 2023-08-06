@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { Navigate, useNavigate } from 'react-router-dom';
 import LOGO_UNIVERSIDAD from '../assets/logoUtem.png';
 import FOTO_PERFIL from '../assets/book.gif';
-import { FaHome, FaChartBar, FaCog, FaPowerOff, FaFile, FaUser, FaGlasses } from 'react-icons/fa';
+import { FaChartBar, FaCog, FaPowerOff, FaFile, FaGlasses } from 'react-icons/fa';
 import '../styles/navbar.css';
 import { useAuth } from "../context/AuthContext";
 

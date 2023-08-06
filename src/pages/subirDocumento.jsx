@@ -112,11 +112,12 @@ function SubirDocumento() {
                 setModalExito(true);
             }
         } catch (error) {
+            setModalCargando(false);
+            setModalError(true);
             console.log(error);
         }
       });
 
-  
     return (
         <div>
             <Navbar />

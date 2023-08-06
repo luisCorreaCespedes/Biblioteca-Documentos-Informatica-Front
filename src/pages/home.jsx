@@ -144,6 +144,11 @@ function Home() {
                 <div className='contenedorFiltros'>
                     <select className='ml-3 estilosFiltros' id='year' defaultValue={selectedYear} onChange={handleYearChange}>
                         <option value=''>Por Año</option>
+                        <option value='2012'>2012</option>
+                        <option value='2013'>2013</option>
+                        <option value='2014'>2014</option>
+                        <option value='2015'>2015</option>
+                        <option value='2016'>2016</option>
                         <option value='2017'>2017</option>
                         <option value='2018'>2018</option>
                         <option value='2019'>2019</option>
@@ -154,8 +159,9 @@ function Home() {
                     </select>
                     <select className='mx-1 estilosFiltros' id='study' defaultValue={selectedStudy} onChange={handleStudyChange}>
                         <option value=''>Por Carrera</option>
-                        <option value='Ing. Civil en Computación mención Informática'>21041</option>
                         <option value='Ing. en Informática'>21030</option>
+                        <option value='Ing. Civil en Computación mención Informática'>21041</option>
+                        <option value='Ing. Civil en Ciencia de Datos'>21049</option>
                     </select>
                     <select className='mr-3 estilosFiltros' id='mode' defaultValue={selectedMode} onChange={handleModeChange}>
                         <option value=''>Por Modalidad</option>
