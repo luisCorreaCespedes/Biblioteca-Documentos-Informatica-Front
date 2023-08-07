@@ -157,8 +157,9 @@ function SubirDocumento() {
                             <div>
                                 <select className='estiloSelectorCampo' required {...register("career")}>
                                     <option value=''>---</option>
-                                    <option value='Ing. Civil en Computación mención Informática'>21041</option>
                                     <option value='Ing. en Informática'>21030</option>
+                                    <option value='Ing. Civil en Computación mención Informática'>21041</option>
+                                    <option value='Ing. Civil en Ciencia de Datos'>21049</option>
                                 </select> 
                             </div>
                         </div>
@@ -193,12 +194,19 @@ function SubirDocumento() {
                             <input type='file' accept="application/pdf" onChange={(e) => capturarDoc(e.target.files[0])} id='uploadDoc' required/>
                         </section>
                     }
-                    
-                    <div className='botonesAlmacenar'>
-                        <button className='w-50 text-xs md:text-sm block bg-[#2A3547] hover:bg-[#475875] focus:bg-[#475875] text-white font-montserrat font-normal rounded-md px-4 py-2 mt-2 mb-2'>
-                            Almacenar Documento
-                        </button>
-                    </div>
+                    { params.id ?
+                        <div className='botonesAlmacenar'>
+                            <button className='w-50 text-xs md:text-sm block bg-[#2A3547] hover:bg-[#475875] focus:bg-[#475875] text-white font-montserrat font-normal rounded-md px-4 py-2 mt-2 mb-2'>
+                                Modificar Documento
+                            </button>
+                        </div>
+                                        :
+                        <div className='botonesAlmacenar'>
+                            <button className='w-50 text-xs md:text-sm block bg-[#2A3547] hover:bg-[#475875] focus:bg-[#475875] text-white font-montserrat font-normal rounded-md px-4 py-2 mt-2 mb-2'>
+                                Almacenar Documento
+                            </button>
+                        </div>
+                    }
 
                 </form>
 

@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useDocs } from '../context/DocsContext';
+import LOGO_UNIVERSIDAD from '../assets/logoUtem.png';
 import Navbar from "../components/navbar";
 import Footer from '../components/footer';
 import { Bar, Pie, Line, Bubble } from 'react-chartjs-2';
@@ -394,6 +395,9 @@ function Estadisticas() {
       <div>
         <Navbar />
         <div>
+            <div className='flex flex-col items-center justify-center pt-12'>
+                <img src={LOGO_UNIVERSIDAD} className='w-24' alt='Logo Universidad' />
+            </div> 
         </div>
         <Footer />
       </div>
